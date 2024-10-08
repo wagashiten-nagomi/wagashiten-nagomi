@@ -1,0 +1,455 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+  font-size: 18px;
+  color: #2B2B2B;
+  background-color: #99AB4E;
+  line-height: 1.4em;
+  display: flex;
+}
+
+li {
+  list-style:none
+}
+
+a {
+  text-decoration: none;
+  color: #2B2B2B;
+}
+
+/* ヘッダーエリアのデザイン */
+header {
+  width: 320px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.ham {
+  display: none;
+}
+
+/* ロゴ */
+h1 {
+  text-align: center;
+}
+
+h1 img {
+  width: 130px;
+  height: 120px;
+  margin: 30px auto;
+}
+
+/* ナビゲーション */
+nav {
+  margin-bottom: 40px;
+  z-index: 100;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
+nav ul li {
+  writing-mode: vertical-lr;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* SNSアイコン */
+.snsicon {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.snsicon p {
+  width: 57px;
+  height: 57px;
+  padding-top: 16px;
+  background-color: #2B2B2B;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.twitter img {
+  width: 29px;
+  height: 26px;
+  margin: 0 auto;
+}
+
+.instagram img {
+  width: 26px;
+  height: 26px;
+}
+
+/* インフォ */
+.info {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.info dl {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info dl dt {
+  text-align: right;
+}
+
+.info dl dd a {
+  text-decoration: underline;
+}
+
+/* コピーライト */
+.copy {
+  text-align: center;
+  font-size: 80%;
+}
+/* ヘッダーエリアのデザインここまで */
+
+/* indexのデザイン */
+.mainvisual {
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainvisual div img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+/* indexのデザインここまで */
+
+/* メインと見出しのデザイン */
+.main {
+  width: 70vw;
+  margin: 24px 24px 24px 344px;
+  padding: 50px;
+  background-color: #FFFFFF;
+}
+
+h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 140%;
+  text-decoration: underline;
+}
+/* メインと見出しのデザインここまで */
+
+/* greetingのデザイン */
+
+.greeting {
+  display: flex;
+}
+
+.greeting img {
+  max-width: 302px;
+  max-height: 200px;
+  margin-right: 16px;
+}
+
+.greeting_msg .greeting_msg_a {
+  margin-bottom: 20px;
+}
+
+.indent {
+  text-indent: 1em;
+}
+/* greetingのデザインここまで */
+
+/* newsのデザイン */
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news figure {
+  margin: 0 60px 46px;
+}
+
+.news figure a:hover {
+  text-decoration: underline;
+}
+
+.news figure img {
+  width: 302px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* newsのデザインここまで */
+
+/* menuのデザイン */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.products::after {
+  content: "";
+  display: block;
+  width: 34%;
+}
+
+.products figure {
+  margin: 0 auto 40px;
+}
+
+.products figure img {
+  width: 250px;
+  height: 165px;
+  object-fit: cover;
+}
+
+.products figure .title {
+  border-bottom: 1px solid #2B2B2B;
+}
+
+.products figure .title,figcaption {
+  width: 250px;
+}
+
+.products figure figcaption span {
+  font-size: 70%;
+}
+
+.aa::after {
+  content: "";
+  display: block;
+}
+/* menuのデザインここまで */
+
+/* accessのデザイン */
+.access {
+  display: flex;
+  justify-content: space-between;
+}
+
+.access address p {
+  margin-bottom: 20px;
+}
+
+.access address img {
+  width: 362px;
+  height: 235px;
+  object-fit: cover;
+}
+
+.access iframe {
+  width: 456px;
+  height: 342px;
+}
+/* accessのデザインここまで */
+
+/* contactのデザイン */
+.contact .induction {
+  text-align: center;
+}
+
+.contact .induction a {
+  text-decoration: underline;
+}
+
+.contact form {
+  margin-top: 40px;
+  width: 650px;
+  text-align: right;
+}
+
+.contact form p label {
+  vertical-align: top;
+  margin-right: 1em;
+}
+
+input,
+textarea {
+  margin-bottom: 20px;
+  width: 420px;
+  border: 1px solid #2B2B2B;
+  padding: 5px;
+}
+
+#userName.grey,
+#userMail.grey,
+#message.grey {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  margin-top: 20px;
+  border: none;
+  background-color: #2B2B2B;
+  padding: 10px 20px;
+  color: #FFFFFF;
+}
+
+span {
+  font-size: 60%;
+}
+/* contactのデザインここまで */
+
+
+/* ブレイクポイント960px */
+@media screen and (max-width: 960px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    width: 100vw;
+    height: 70px;
+    background-color: #FFFFFF;
+  }
+
+  h1 {
+    margin: initial;
+  }
+
+  h1 img {
+    width: 68px;
+    height: 68px;
+    margin: 2px auto;
+    text-align: center;
+  }
+
+  .ham {
+    display: block;
+  }
+
+  .ham img {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .hamburger {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: none;
+  }
+
+  nav {
+    padding: 0 40px 0;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav ul li {
+    text-align: center;
+    writing-mode: initial;
+    font-size: 120%;
+    padding: 14px;
+  }
+
+  .info dl dt {
+    padding: 6px;
+  }
+
+  /* メインと見出し */
+  .main {
+    width: 90vw;
+    margin: 80px 20px 10px;
+    padding: 18px;
+  }
+
+  /* greeting */
+  .greeting {
+    display: block;
+  }
+
+  .greeting img {
+    min-width: 302px;
+    min-height: 200px;
+    margin-bottom: 16px;
+  }
+
+  /* news */
+  .news {
+    display: block;
+  }
+
+  .news figure {
+    margin-bottom: 46px;
+    text-align: center;
+  }
+
+  .news p,figcaption {
+    margin: 0 auto;
+  }
+
+  /* menu */
+  .products {
+    display: block;
+  }
+
+  .products figure {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .products p,
+  figcaption {
+    margin: 0 auto;
+  }
+
+  /* access */
+  .access {
+    display: block;
+    text-align: center;
+  }
+
+  .access address img {
+    width: 294px;
+    height: 195px;
+    margin: 0 auto 16px;
+  }
+
+  .access iframe {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto 16px;
+  }
+
+  /* contact */
+  .contact form  {
+    width: 300px;
+    text-align: center;
+    margin: 40px auto 0;
+  }
+
+  input,
+  textarea {
+    display: block;
+    width: 300px;
+    margin: 0 auto 18px;
+  }
+}
